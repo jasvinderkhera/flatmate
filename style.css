@@ -17,9 +17,18 @@ body {
   width: 100%;
 }
 
+.fixed_container{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .logo {
@@ -58,6 +67,7 @@ nav {
 .flatmate_spaces {
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .flatmate_spaces .rightside .select_options {
@@ -96,7 +106,6 @@ nav {
 .menu_overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.234);
@@ -109,6 +118,7 @@ nav {
   border-radius: 10px;
   display: flex;
   position: relative;
+  z-index: 1;
 }
 
 .modal_menu {
@@ -141,7 +151,7 @@ nav {
 }
 
 .cant_find_inputs input{
-border: 1px solid gray;
+border: none;
 outline: none;
 }
 
@@ -163,4 +173,50 @@ outline: none;
   padding: 30px 60px;
   display: flex;
   justify-content: space-between;
+}
+
+.spaces_container{
+  margin-top: 200px;
+}
+
+.flats_container .flats{
+  background-color: white;
+  box-shadow: -1px 0px 4px 0px #00000096;
+  border-radius: 8px;
+
+}
+
+.flats_container .flats .img_container{
+  border-radius: 8px;
+  overflow: hidden;
+  width: 266px;
+  height: 200px;
+}
+.flat_details{
+  width: 275px;
+}
+
+.facilities .box p{
+  font-size: 12px;
+}
+
+.req_callback{
+  background-color: rgb(44 164 113);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+}
+.prices{
+  border-right: 1px solid  gray;
+}
+
+.fa-arrow-up-right-from-square{
+  font-size: 10px;
+}
+
+.rent p{
+  font-size: 12px;
 }
