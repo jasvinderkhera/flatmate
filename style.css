@@ -17,12 +17,12 @@ body {
   width: 100%;
 }
 
-.fixed_container{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1;
+.fixed_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav {
@@ -39,6 +39,7 @@ nav {
 }
 
 .location_details {
+  display: flex;
   padding: 8px 20px;
   border: 1px solid rgba(128, 128, 128, 0.297);
   border-radius: 30px;
@@ -143,68 +144,68 @@ nav {
 }
 
 .cant_find_container {
-  background: url("https://thehelloworld.com/_next/static/media/homeFooter.fe9a17a5.png"), rgba(0, 128, 0, 0.204);
+  background: url("https://thehelloworld.com/_next/static/media/homeFooter.fe9a17a5.png"),
+    rgba(0, 128, 0, 0.204);
   background-repeat: repeat;
   background-blend-mode: darken, luminosity;
   background-size: 200px;
   padding: 30px 100px;
 }
 
-.cant_find_inputs input{
-border: none;
-outline: none;
+.cant_find_inputs input {
+  border: none;
+  outline: none;
 }
 
-.cant_find_location{
-    position: relative;
+.cant_find_location {
+  position: relative;
 }
-.cant_find_location_icon{
-    position: absolute;
-    top: 13px;
-    left: 13px;
-}
-
-.about_flatmate_container{
-    padding: 80px;
+.cant_find_location_icon {
+  position: absolute;
+  top: 13px;
+  left: 13px;
 }
 
-.footer_container{
+.about_flatmate_container {
+  padding: 80px;
+}
+
+.footer_container {
   background-color: rgba(250, 250, 2500);
   padding: 30px 60px;
   display: flex;
   justify-content: space-between;
 }
 
-.spaces_container{
+.spaces_container {
   margin-top: 200px;
 }
 
-.flats_container{
+.flats_container {
   margin-left: 50px;
 }
 
-.flats_container .flats{
+.flats_container .flats {
   background-color: white;
   box-shadow: -1px 0px 4px 0px #00000096;
   border-radius: 8px;
-
 }
 
-.flats_container .flats .img_container{
+.flats_container .flats .img_container {
   border-radius: 8px;
   overflow: hidden;
   width: 266px;
   height: 200px;
 }
-.flat_details{
+.flat_details {
   width: 275px;
 }
 
-.facilities .box p{
+.facilities .box p {
   font-size: 12px;
 }
 
-.req_callback{
+.req_callback {
   background-color: rgb(44 164 113);
   color: white;
   padding: 3px 6px;
@@ -213,14 +214,83 @@ outline: none;
   font-size: 13px;
   font-weight: 500;
 }
-.prices{
-  border-right: 1px solid  gray;
+.prices {
+  border-right: 1px solid gray;
 }
 
-.fa-arrow-up-right-from-square{
+.fa-arrow-up-right-from-square {
   font-size: 10px;
 }
 
-.rent p{
+.rent p {
   font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .location_details{
+    display: none;
+  }
+  .search_input input {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.297);
+    outline: none;
+  }
+  .flatmate_spaces .leftside, .select_options{
+    display: none;
+  }
+  .cant_find_container{
+    padding: 30px 16px;
+  }
+   
+  .cant_find_inputs{
+    flex-direction: column;
+  }
+  .cant_find_location input{
+    width: 100%;
+  }
+  .cant_find_inputs button{
+    margin-top: 8px ;
+  }
+  .about_flatmate_container{
+    padding: 60px 16px;
+  }
+
+  .footer_boxes_3{
+    flex-direction: column;
+    padding: 20px 0 !important;
+  }
+  .footer_container{
+    flex-direction: column;
+    padding: 40px 16px;
+  }
+  .footer_boxes_1{
+    padding: 20px 0 !important;
+  }
+  .flats_container {
+    margin: 0;
+  }
+  .flats_container .flats {
+    margin: 15px 10px;
+    width: 100%;
+  }
+  .flats_container .flats .img_container{
+    width: 100%;
+  }
+  .flats_container .flats .img_container img{
+    width: 100%;
+  }
+  .flats_container .flats .flat_details{
+    width: 100%;
+  }
+  .spaces_container{
+    margin-top: 120px;
+  }
 }
