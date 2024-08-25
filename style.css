@@ -179,6 +179,10 @@ outline: none;
   margin-top: 200px;
 }
 
+.flats_container{
+  margin-left: 50px;
+}
+
 .flats_container .flats{
   background-color: white;
   box-shadow: -1px 0px 4px 0px #00000096;
