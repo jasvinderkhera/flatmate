@@ -26,6 +26,7 @@ nav {
   font-family: "Satoshi-Regular";
   font-size: 20px;
   font-weight: bold;
+  display: inline-block;
 }
 
 .location_details {
@@ -155,4 +156,11 @@ outline: none;
 
 .about_flatmate_container{
     padding: 80px;
+}
+
+.footer_container{
+  background-color: rgba(250, 250, 2500);
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
 }
