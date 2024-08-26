@@ -70,6 +70,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  padding: 12px 35px;
 }
 
 .flatmate_spaces .rightside .select_options {
