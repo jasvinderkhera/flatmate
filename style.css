@@ -249,6 +249,55 @@ nav {
   font-size: 150px;
 }
 
+.contact_help_container{
+  padding: 80px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_help_container .contact_address{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Satoshi-Regular";
+}
+.contact_form .contact_form_container{
+  width: 460px;
+  padding: 15px;
+  box-shadow: 1px 0px 20px #00000069;
+  font-family: "Satoshi-Regular";
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.contact_form .contact_form_container input, label{
+  margin-bottom: 10px;
+}
+
+.contact_form .contact_form_container input{
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.207);
+}
+
+.contact_form .contact_form_container button{
+  width: 100%;
+  border: none;
+  color: white;
+  background-color:rgb(44 164 113);
+  padding: 8px 0;
+  margin: 20px 0;
+  font-family: "Satoshi-Regular";
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.contact_map_container{
+  background-color: #fafafa;
+  padding: 20px 30px;
+  margin: 50px auto;
+}
+
+
 
 
 /* -------------------------------------------------------Contact end---------------------------------------------------------------------- */
@@ -381,9 +430,19 @@ gap: 12px;
   font-size: 80px;
 }
 
+.contact_help_container{
+  flex-direction: column;
+  gap: 50px;
+}
 
+.contact_form .contact_form_container{
+  width: 100%;
+}
 
+.contact_help_container{
+  padding: 20px;
 
+}
 
 /* -----------------Contact end----------------------------------------------------------------------------------- */
 
