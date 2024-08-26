@@ -234,6 +234,10 @@ nav {
 /* -------------------------------------------------------Contact------------------------------------------------------------------------- */
 
 
+.contact_nav_contact span{
+  font-size: 13px;
+}
+
 .contact_hello_banner{
   margin-top: 90px;
   background-color: rgba(250, 250, 2500);
@@ -301,6 +305,43 @@ nav {
 
 
 /* -------------------------------------------------------Contact end---------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------Privacy Policy--------------------------------------------------------------------- */
+
+
+.privacy_policy_banner{
+  margin-top: 90px;
+  background-color: rgba(250, 250, 2500);
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy_policy_banner h2{
+  font-size: 50px;
+}
+
+.policy_details_container{
+  font-family: "Satoshi-Regular";
+}
+
+.policies ul li{
+  padding-bottom: 10px;
+}
+
+.policy_details_container .policies{
+  padding: 20px;
+}
+
+
+/* ------------------------------------------------------Privacy Policy end----------------------------------------------------------------- */
+
+
 
 @media only screen and (max-width: 768px) {
   .logo {
