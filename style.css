@@ -343,6 +343,95 @@ nav {
 
 
 
+
+/* -----------------------------------------------for home Owner--------------------------------------------------------------------------- */
+
+
+.home_owner{
+  background: url("https://hw-prod-static-assets.s3.ap-south-1.amazonaws.com/marketing/website/owner-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.owner_parallax{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.owner_parallax h2{
+ font-size: 60px;
+ color: white;
+ margin-top: 250px;
+  text-align: center;
+}
+
+.home_owner_banner_img_box{
+  margin-top: 50px;
+  height: 80px;
+  background: url("https://hw-prod-static-assets.s3.ap-south-1.amazonaws.com/marketing/website/dot-repeat.svg");
+  background-repeat: repeat-x;
+  width: 50%;
+}
+
+.owner_different{
+  background-color: white;
+  font-family: "Satoshi-regular";
+}
+
+.owner_different .container{
+  padding: 100px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.owner_different .container .owner_box1, .owner_box2{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  text-align: center;
+}
+
+.list_property_container{
+  background-color: rgba(250, 250, 250);
+  font-family: "Satoshi-Regular";
+  padding: 50px 150px;
+}
+
+.list_property_form{
+  background-color: white;
+  padding: 20px 200px;
+  margin: 50px 200px;
+}
+
+.list_property_form .input_div{
+display: flex;
+gap: 10px;
+margin: 20px 0;
+}
+
+.list_property_form .input_div label{
+width: 70px;
+}
+.imp_sign{
+  font-size: 7px;
+  /* margin-bottom: 15px; */
+  display: inline-block;
+}
+
+.list_property_form button{
+margin-left: 200px;
+}
+
+
+/* -----------------------------------------------for home Owner end----------------------------------------------------------------------- */
+
+
+
 @media only screen and (max-width: 768px) {
   .logo {
     font-size: 15px;
@@ -487,5 +576,55 @@ gap: 12px;
 
 /* -----------------Contact end----------------------------------------------------------------------------------- */
 
+
+
+
+/* -------------------------home owner----------------------------------------------------------------------------- */
+
+.owner_parallax h2{
+  margin-top: 250px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+ }
+
+ .owner_different .container .owner_box1, .owner_box2{
+  flex-direction: column;
+ }
+
+ .owner_different .container{
+  padding: 50px 20px;
+ }
+
+ .owner_different .boxex{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+ }
+
+ .list_property_container{
+  padding: 50px 10px;
+ }
+
+ .list_property_form{
+  margin: 50px 0;
+  padding: 20px 15px;
+ }
+
+ .list_property_form button{
+  margin-left:20px ;
+ }
+
+ .list_property_form .input_div{
+ flex-direction: column;
+ align-items: start;
+ gap: 0;
+ }
+
+ .list_property_form .input_div label{
+  width: 100%;
+  }
+
+/* -------------------------home owner end ------------------------------------------------------------------------- */
 
 }
