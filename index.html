@@ -64,7 +64,7 @@
       <div class="modals">
         <div class="menu_overlay">
           <div class="menu_modal_content bg-white">
-            <div class="modal_menu d-flex gap-5 align-items-center mx-auto">
+            <div class="modal_menu">
               <div class="box1">
                 <div><a href="">Home</a></div>
                 <div><a href="">Work with us</a></div>
@@ -88,7 +88,7 @@
           <h5 class="mb-1">FlatMate Spaces in Delhi</h5>
           <p class="mb-0">17 spaces available</p>
         </div>
-        <div class="rightside d-flex align-items-center gap-3">
+        <div class="rightside d-flex align-items-center gap-md-3">
           <div class="select_options">
             <label for="cars" class="text-secondary fw-bold">Sort By:</label>
             <select name="cars" id="cars" class="fw-bold pe-3">
@@ -97,7 +97,19 @@
               <option value="opel">Price: High to Low</option>
             </select>
           </div>
-          <div class="filters fw-bold d-flex justify-content-between gap-3">
+          <div class="mob_location_details d-md-none gap-1 align-items-center border border-1">
+            <div class="fa_icon">
+              <i class="fa-solid fa-location-dot fs-5"></i>
+            </div>
+            <div class="mob_location_name">
+              <p class="mb-0 fw-bold">Delhi</p>
+            </div>
+          </div>
+          <div class="mob_sort d-md-none d-sm-flex gap-3 px-3 py-2 border border-1">
+            <i class="fa-solid fa-bars-staggered pe-2"></i>
+            <span class="fw-semibold">Sort</span>
+          </div>
+          <div class="filters fw-bold d-flex justify-content-between gap-md-3 gap-sm-1">
             <div class="filter_icon">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -109,6 +121,7 @@
             </div>
             <span>Filters</span>
           </div>
+          
         </div>
       </div>
      </div>
