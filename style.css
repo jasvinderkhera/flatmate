@@ -28,6 +28,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
 }
 
@@ -230,6 +231,28 @@ nav {
   font-size: 12px;
 }
 
+/* -------------------------------------------------------Contact------------------------------------------------------------------------- */
+
+
+.contact_hello_banner{
+  margin-top: 90px;
+  background-color: rgba(250, 250, 2500);
+  height: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_hello_banner h2{
+  font-size: 150px;
+}
+
+
+
+/* -------------------------------------------------------Contact end---------------------------------------------------------------------- */
+
 @media only screen and (max-width: 768px) {
   .logo {
     font-size: 15px;
@@ -346,4 +369,23 @@ padding: 8px 12px;
 .flatmate_spaces .rightside{
 gap: 12px;
 }
+
+/* -----------------Contact----------------------------------------------------------------------------------- */
+
+.contact_hello_banner{
+  height: 300px;
+  margin-top: 60px;
+}
+
+.contact_hello_banner h2{
+  font-size: 80px;
+}
+
+
+
+
+
+/* -----------------Contact end----------------------------------------------------------------------------------- */
+
+
 }
