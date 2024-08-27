@@ -45,6 +45,10 @@ nav {
   border: 1px solid rgba(128, 128, 128, 0.297);
   border-radius: 30px;
 }
+
+.location_details:hover{
+  cursor: pointer;
+}
 .location_name {
   font-size: 11px;
 }
@@ -70,17 +74,17 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding: 12px 35px;
+  padding: 12px 40px;
 }
 
 .flatmate_spaces .rightside .select_options {
-  padding: 8px 15px;
+  padding: 8px 10px;
   border: 1px solid rgba(128, 128, 128, 0.297);
   border-radius: 6px;
 }
 
-.flatmate_spaces .rightside .select_options option {
-  margin-top: 50px;
+.flatmate_spaces .rightside .select_options select option {
+  margin-top: 50px !important;
 }
 
 .flatmate_spaces .rightside .select_options select {
@@ -98,9 +102,18 @@ nav {
   border: 1px solid rgba(128, 128, 128, 0.297);
   border-radius: 6px;
 }
+
+.flatmate_spaces .rightside .filters:hover{
+background-color: rgba(0, 0, 0, 0.841);
+color: white;
+cursor: pointer;
+}
+
 .menu_bar:hover .menu_bar_icon {
   color: rgb(71 175 131);
 }
+
+/* ------------------------------------------------------MENU MODAL------------------------------------------------------------------ */
 
 .modals {
   display: none;
@@ -123,6 +136,7 @@ nav {
   position: relative;
   z-index: 1;
 }
+
 
 .modal_menu {
   display: flex;
@@ -148,6 +162,191 @@ nav {
   right: 20px;
   top: 20px;
 }
+
+
+/* ----------------------------------------------------MENU MODAL END-------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------FILTER MODAL-------------------------------------------------------------- */
+
+.filter_modals {
+  display: none;
+}
+
+.filter_menu_overlay {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.234);
+}
+
+.filter_menu_modal_content {
+  height: 75vh;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.filter_modal_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  gap: 20px;
+}
+
+.filter_modal_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.filter_modal_cross_icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* ----------------------------------------------------FILTER MODAL END-------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------SORT MODAL-------------------------------------------------------------- */
+
+.sort_modals {
+  display: none;
+}
+
+.sort_menu_overlay {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.234);
+}
+
+.sort_menu_modal_content {
+  height: 75vh;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.sort_modal_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  gap: 20px;
+}
+
+.sort_modal_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.sort_modal_cross_icon {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+/* ----------------------------------------------------SORT MODAL END-------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------LOCATION MODAL-------------------------------------------------------------- */
+
+.location_modals {
+  display: none;
+}
+
+.location_menu_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.234);
+}
+
+.location_menu_modal_content {
+  height: 60vh;
+  width: 50%;
+  margin:140px auto;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location_modal_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  height: 400px;
+  gap: 20px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.location_modal_menu .location_options_menu{
+  padding: 20px 40px;
+  margin-top: 90px ;
+ display: flex;
+ gap: 50px;
+ flex-wrap: wrap;
+ 
+}
+
+.location_modal_menu .location_options_menu .location_div{
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  height: 70px;
+  width: 80px;
+}
+
+.location_modal_menu .location_options_menu .location_div img{
+  height: 48px;
+  width: 48px;
+}
+
+.location_heading {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ padding: 25px 30px;
+ height: 70px;
+ border-bottom: 1px solid gray;
+}
+
+/* ----------------------------------------------------LOCATION MODAL END-------------------------------------------------------------- */
 
 .cant_find_container {
   background: url("https://thehelloworld.com/_next/static/media/homeFooter.fe9a17a5.png"),
@@ -206,8 +405,13 @@ nav {
 .flat_details {
   width: 275px;
 }
+.flat_details .ammenities .horizon_div{
+  height: 2px;
+  width: 120px;
+  border-top: 1px solid gray;
+}
 
-.facilities .box p {
+.facilitiess .box p {
   font-size: 12px;
 }
 
@@ -445,7 +649,7 @@ margin-left: 200px;
   }
   .search_input input {
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 10px 10px 35px;
     border-radius: 30px;
     border: 1px solid rgba(128, 128, 128, 0.297);
     outline: none;
@@ -453,6 +657,12 @@ margin-left: 200px;
   .flatmate_spaces .leftside, .select_options{
     display: none;
   }
+
+  #sortData select option{
+    margin-top: 10px;
+  }
+
+
   .cant_find_container{
     padding: 30px 16px;
   }
@@ -534,8 +744,122 @@ margin-left: 200px;
   padding-bottom: 10px;
 }
 
-/* ------------------------------------------------------- */
+/*------------------------------------------------------------------------------------- Filter modal------------------------------------- */
 
+.filter_modal_menu{
+  padding-top: 40px;
+  display: block;
+  font-size: 25px;
+  margin: 0;
+  gap: 0;
+}
+.filter_menu_modal_content{
+  height: 70vh;
+width: 100%;
+margin: 0px;
+margin-top: 340px;
+border-radius: 10px;
+display: flex;
+position: relative;
+z-index: 1;
+}
+.filter_menu_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.234);
+}
+
+.filter_modal_cross_icon {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.filter_modal_menu h6{
+  margin-left: 12px;
+}
+
+
+/* ---------------------------------------------------Filter Modal End------------------------ */
+
+
+
+
+
+/*------------------------------------------------------------------------------------- Filter modal------------------------------------- */
+
+.sort_modal_menu{
+  padding-top: 40px;
+  display: block;
+  font-size: 25px;
+  margin: 0;
+  gap: 0;
+}
+.sort_menu_modal_content{
+  height: 70vh;
+width: 100%;
+margin: 0px;
+margin-top: 340px;
+border-radius: 10px;
+display: flex;
+position: relative;
+z-index: 1;
+}
+.sort_menu_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.234);
+}
+
+
+
+/* ----------------------------------------------------------------Sort Modal End------------------------------------------------ */
+
+
+/* -----------------------------------------------------------------Location Modal------------------------------------------- */
+
+
+.location_menu_modal_content {
+  height: 60vh;
+  width: 100%;
+  margin-top:340px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+}
+
+.location_modal_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  gap: 20px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.location_modal_menu .location_options_menu{
+  margin-top: 50px ;
+  padding: 10px;
+  gap: 5px;
+}
+
+.location_modal_menu .location_options_menu .location_div img{
+  height: 40px;
+  width: 40px;
+}
+.location_modal_menu .location_options_menu .location_div{
+  font-size: 11px;
+  padding: 0 7px;
+}
+
+/* -----------------------------------------------------------------Location Modal End------------------------------------------- */
 
 .mob_location_details{
   display: flex;
