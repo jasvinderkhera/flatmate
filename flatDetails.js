@@ -1,16 +1,16 @@
 function fetchData() {
-    fetch("https://raw.githubusercontent.com/jasvinderkhera/Fake-Server/main/FlatMateFlats.json").then(response => response.json()).then((data) => {
-        console.log(data)
+  fetch("https://raw.githubusercontent.com/jasvinderkhera/Fake-Server/main/FlatMateFlats.json").then(response => response.json()).then((data) => {
+    console.log(data)
 
 
-        let flats_container = document.querySelector(".flats_container")
-        let sortData = document.querySelector("#sortData")
+    let flats_container = document.querySelector(".flats_container")
+    let sortData = document.querySelector("#sortData")
 
-        function displayData(sortedData){
-          flats_container.innerHTML = ""
-          for (let i = 0; i < sortedData.length; i++) {
+    function displayData(sortedData) {
+      flats_container.innerHTML = ""
+      for (let i = 0; i < sortedData.length; i++) {
 
-            flats_container.innerHTML += `
+        flats_container.innerHTML += `
         <div class="flats ps-2 pe-1 py-2">
             <div class="img_container">
               <img src="${sortedData[i].url}" alt="" height="200" width="266">
@@ -22,7 +22,7 @@ function fetchData() {
                 <span class="text-success fw-bold">FREE AMENITIES</span>
                 <div class="horizon_div"></div>
               </div>
-              <div class="facilitiess d-flex gap-4 pb-3">
+              <div class="facilitiess d-flex gap-4 pb-3 pt-2 px-2" id="facilities-${i}">
               </div>
                </div>
             <div class="rent d-flex align-items-center">
@@ -38,36 +38,39 @@ function fetchData() {
           </div>
         `
 
-            // for (let j = 0; j < data[i].facilities.length; j++) {
-            //     let facilitiess = document.querySelector(".facilitiess")
-            //     facilitiess.innerHTML += `
-            //  <div class="box">
-            //       <img src="${data[i].facilities[j].image}" alt="" height="20" width="20">
-            //       <p>${data[i].facilities[j].facility_name}</p>
-            //     </div>
-            // `
-            // }
+        let facilitiess = document.querySelector(`#facilities-${i}`)
+        facilitiess.innerHTML = ""
+
+        for (let j = 0; j < sortedData[i].facilities.length; j++) {
+          console.log("DATA", sortedData[i].facilities)
+          facilitiess.innerHTML += `
+             <div class="box">
+                  <img src="${sortedData[i].facilities[j].image}" alt="" height="20" width="20">
+                  <p>${sortedData[i].facilities[j].facility_name}</p>
+                </div>
+            `
         }
-        }
+      }
+    }
 
-        function convertRentToNumber(rent){
-            return Number(rent.replace(/,/g,""))
-        }
+    function convertRentToNumber(rent) {
+      return Number(rent.replace(/,/g, ""))
+    }
 
-        displayData(data)
+    displayData(data)
 
-        sortData.addEventListener("change",function(){
-          let sortedData = [...data]
-          if(sortData.value === "lowToHigh"){
-            sortedData.sort((a,b)=> convertRentToNumber(a.rent) - convertRentToNumber(b.rent))
-          }
-          if(sortData.value === "highToLow"){
-            sortedData.sort((a,b)=> convertRentToNumber(b.rent) - convertRentToNumber(a.rent))
-          }
+    sortData.addEventListener("change", function () {
+      let sortedData = [...data]
+      if (sortData.value === "lowToHigh") {
+        sortedData.sort((a, b) => convertRentToNumber(a.rent) - convertRentToNumber(b.rent))
+      }
+      if (sortData.value === "highToLow") {
+        sortedData.sort((a, b) => convertRentToNumber(b.rent) - convertRentToNumber(a.rent))
+      }
 
-          displayData(sortedData)
-        })
+      displayData(sortedData)
     })
+  })
 }
 
 fetchData()
