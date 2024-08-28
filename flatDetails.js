@@ -1,6 +1,6 @@
 function fetchData() {
   fetch("https://raw.githubusercontent.com/jasvinderkhera/Fake-Server/main/FlatMateFlats.json").then(response => response.json()).then((data) => {
-    console.log(data)
+    // console.log(data)
 
 
     let flats_container = document.querySelector(".flats_container")
@@ -42,9 +42,9 @@ function fetchData() {
         facilitiess.innerHTML = ""
 
         for (let j = 0; j < sortedData[i].facilities.length; j++) {
-          console.log("DATA", sortedData[i].facilities)
+          // console.log("DATA", sortedData[i].facilities)
           facilitiess.innerHTML += `
-             <div class="box">
+             <div class="box d-flex flex-column align-items-center">
                   <img src="${sortedData[i].facilities[j].image}" alt="" height="20" width="20">
                   <p>${sortedData[i].facilities[j].facility_name}</p>
                 </div>
