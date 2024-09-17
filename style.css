@@ -30,6 +30,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  width: 1518px;
+  margin: auto;
 }
 
 .logo {
@@ -75,6 +77,8 @@ nav {
   justify-content: space-between;
   background-color: white;
   padding: 12px 40px;
+  width: 1518px;
+  margin: auto;
 }
 
 .flatmate_spaces .rightside .select_options {
@@ -357,6 +361,11 @@ cursor: pointer;
   padding: 30px 100px;
 }
 
+.cant_find_inner_container{
+  width: 1280px;
+  margin: auto;
+}
+
 .cant_find_inputs input {
   border: none;
   outline: none;
@@ -377,6 +386,12 @@ cursor: pointer;
 
 .footer_container {
   background-color: rgba(250, 250, 2500);
+ 
+}
+
+.footer_inner_container{
+  width: 1518px;
+  margin: auto;
   padding: 30px 60px;
   display: flex;
   justify-content: space-between;
