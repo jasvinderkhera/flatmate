@@ -34,6 +34,14 @@ nav {
   margin: auto;
 }
 
+.footer_inner_container{
+  width: 1518px;
+  margin: auto;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: "Satoshi-Regular";
   font-size: 20px;
@@ -389,13 +397,7 @@ cursor: pointer;
  
 }
 
-.footer_inner_container{
-  width: 1518px;
-  margin: auto;
-  padding: 30px 60px;
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .spaces_container {
   margin-top: 200px;
@@ -669,6 +671,14 @@ margin-left: 200px;
     border: 1px solid rgba(128, 128, 128, 0.297);
     outline: none;
   }
+
+  nav{
+    width: 100%;
+  }
+
+  .flatmate_spaces{
+    width: 100%;
+  }
   .flatmate_spaces .leftside, .select_options{
     display: none;
   }
@@ -677,12 +687,21 @@ margin-left: 200px;
     margin-top: 10px;
   }
 
+  .footer_inner_container{
+    width: 100%;
+  }
+
 
   .cant_find_container{
     padding: 30px 16px;
   }
+
+  .cant_find_inner_container{
+    width: 100%;
+  }
    
   .cant_find_inputs{
+    width: 100%;
     flex-direction: column;
   }
   .cant_find_location input{
@@ -699,7 +718,7 @@ margin-left: 200px;
     flex-direction: column;
     padding: 20px 0 !important;
   }
-  .footer_container{
+  .footer_inner_container{
     flex-direction: column;
     padding: 40px 16px;
   }
